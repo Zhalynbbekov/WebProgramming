@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"> 
+	<h1 class="display-4">Zhalynbekov is coding</h1>
+	<p class="lead">I'm learning Django with HTML and CSS. After that I want to learn Django rest framework. Because now I want to be a backend developer.
+	</p>
+</div>
+
+<div class="container">
+	<div class="d-flex flex-column">
+		<h4>Registered users:</h4>
+		{% for i in accounts %}
+			<p>{{ i }}</p>
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock content %}

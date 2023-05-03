@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>This is title</title>
+	
+	<hr>
+	{% include 'snippets/header.html' %}
+
+</head>
+<body>
+
+	<style type="text/css">
+		.main{
+			min-height: 100hv;
+			height: 100%;
+		}
+	</style>
+	<div class="main">
+		{% block content %}
+		
+		{% endblock content %}
+	</div>
+
+	{% include 'snippets/footer.html' %}
+
+</body>
+
+</html>
